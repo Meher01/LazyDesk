@@ -2,20 +2,20 @@
 
 ## Purpose
 
-GitHub Copilot Agent was used to assist with focused repository work in
-LazyDesk: understanding the existing local-first Streamlit application,
-separating pure logic from the UI, checking the standard-library unit-test
-layout, and preparing a small GitHub Actions test workflow and supporting
-documentation. This was useful because the project has a small, testable
-core but also has a runtime dependency on Ollama that should not be required
-by CI.
+Copilot assistance was intended for focused repository work in LazyDesk:
+understanding the existing local-first Streamlit application, separating pure
+logic from the UI, checking the standard-library unit-test layout, and
+preparing a small GitHub Actions test workflow and supporting documentation.
+The inspected repository and Git history alone cannot independently verify
+Copilot usage, the specific prompts or responses, or which changes were
+Copilot-generated. No Copilot transcript or session export is treated as
+inspected evidence here.
 
-The repository history confirms the related development tasks, including
-extracting testable core logic, adding unit tests, and adding a GitHub Actions
-workflow. The available history does not include Copilot Agent transcripts or
-an attribution of those commits to Copilot. This document therefore records
-the work and how Agent assistance was used without claiming that Copilot
-wrote code when that is not supported by the available evidence.
+The inspected repository and Git history confirm the related development
+tasks, including extracting testable core logic, adding unit tests, and adding
+a GitHub Actions workflow. This document records those repository facts
+without attributing specific code to Copilot beyond evidence that must be
+captured from the actual Agent session.
 
 ## Confirmed development work
 
@@ -30,10 +30,9 @@ The application-specific work represented in the repository includes:
 - Adding a minimal GitHub Actions workflow that runs those tests on Ubuntu
   with Python 3.13 and does not start Ollama or call an external AI service.
 
-The current requested documentation and CI command update are completed in
-this change. Capturing the evidence listed below remains pending until those
-artifacts are collected from the actual Agent session, local runs, and
-GitHub.
+The documentation and CI command changes are present in the repository.
+Capturing the evidence listed below remains pending until artifacts are
+collected from the actual Agent session, local runs, and GitHub.
 
 ## Why extracting the core functions helped
 
@@ -68,10 +67,10 @@ claim to cover every UI behavior: for example, they do not exercise
 Streamlit rendering, the text-area `max_chars` setting, the long-note
 warning threshold, an HTTP request, or a live Ollama model.
 
-## Human review process
+## Intended human review process
 
-Generated or suggested changes require human review. The review process for
-this work is:
+Generated or suggested changes require human review. The intended review
+process for this work is:
 
 1. Inspect the changed files and compare them with the existing application
    behavior.
@@ -81,16 +80,18 @@ this work is:
    Ollama, download a model, call an AI API, or require secrets.
 4. Review the resulting behavior manually, including prompt mode selection,
    response validation, and the application’s existing Ollama error handling.
-5. Inspect the GitHub Actions run after it is available.
+5. Inspect a GitHub Actions run after a real hosted run is available.
 
 Copilot suggestions can be wrong, incomplete, or inconsistent with the
 project’s intent. Generated output and generated code must be verified by a
-human before they are relied on.
+human before they are relied on. The inspected repository and Git history do
+not establish that each step above was completed for this change.
 
 ## Evidence to capture
 
 The following evidence should be captured from the real development and
-validation process; none of it is invented in this document:
+validation process. It is not represented as captured evidence in this
+document:
 
 - The actual GitHub Copilot Agent prompts and responses used for the work.
 - The final diffs reviewed by a human.
@@ -98,4 +99,5 @@ validation process; none of it is invented in this document:
 - Links or exported details for GitHub Actions workflow runs, including
   whether the run passed or failed.
 
-Until those artifacts are captured, the evidence-collection step is pending.
+No hosted GitHub Actions run URL or result is claimed here. Until these
+artifacts are captured, the evidence-collection step is pending.
