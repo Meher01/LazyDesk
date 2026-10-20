@@ -136,4 +136,4 @@ summaries before acting on them.
 
 ## License
 
-A personal project created for Hacktoberfest Week 2 DevChallenge
+A personal project created for Hacktoberfest Week 3 DevChallenge
