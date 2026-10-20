@@ -129,7 +129,7 @@ if st.button("✨ Organize my mess", type="primary"):
                         "options": {
                             "temperature": 0.2,
                             "num_ctx": 2048,
-                            "num_predict": 500,
+                            "num_predict": 1000,
                         },
                     },
                     timeout=(5, 240),
