@@ -1,4 +1,4 @@
-# LazyDesk
+# LazyDesk - [Hacktoberfest Week 3 Dev Challenge](https://dev.to/challenges/hacktoberfest-week3-2026-10-19)
 
 LazyDesk is a local-first productivity assistant that turns messy notes into
 organized Markdown. It uses a local Ollama model through a small Streamlit
@@ -136,5 +136,4 @@ summaries before acting on them.
 
 ## License
 
-No license has been specified yet. Add a license file before distributing or
-accepting external contributions.
+A personal project created for Hacktoberfest Week 2 DevChallenge
